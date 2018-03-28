@@ -36,3 +36,5 @@ git reflog 查看命令历史,可以回到被覆盖的新版本
 ######实际上git add只是把内容从工作间放在暂存区，git commit才是把内容提交到分支（默认master）（暂存区也在版本库里）
 ######git add 之后又修改了，git commit只会提交第一次修改（git add之前的修改），因为第二次的修改没在暂存区，在工作间
 
+git diff HEAD --readme.txt 查看本地readme.txt和master分支当前版本是否一样
+
