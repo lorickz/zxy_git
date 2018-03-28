@@ -25,3 +25,14 @@ git commit -m "添加了readme.txt和helloworld.txt两个文件"
 git status #查看当前仓库状态
 git diff readme.txt #查看readme.txt的修改
 ######git add 和 git commit提交修改（和提交新文件一样，当时git commit之前建议先git status一下）
+
+git reset --hard commit_id 回到某个版本id的版本; 
+git reset --hard HEAD^ 回到当前版本的前一版本（两个^为前两个版本,以此类推）;
+
+git log 查看提交历史
+git log --pretty=oneline 简化查看提交历史
+git reflog 查看命令历史,可以回到被覆盖的新版本
+
+######实际上git add只是把内容从工作间放在暂存区，git commit才是把内容提交到分支（默认master）（暂存区也在版本库里）
+######git add 之后又修改了，git commit只会提交第一次修改（git add之前的修改），因为第二次的修改没在暂存区，在工作间
+
