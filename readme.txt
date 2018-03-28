@@ -38,3 +38,8 @@ git reflog 查看命令历史,可以回到被覆盖的新版本
 
 git diff HEAD --readme.txt 查看本地readme.txt和master分支当前版本是否一样
 
+git checkout -- file 丢弃工作区的修改
+git reset HEAD file 再 git checkout -- file 来丢弃暂存区的修改
+
+######假如本地删除了一个test.txt文件，你可以：git checkout --  test.txt 把它恢复最新版本，和丢弃工作区修改一样，你也可以：git rm test.txt 把它从版本库删除
+
