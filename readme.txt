@@ -43,3 +43,9 @@ git reset HEAD file 再 git checkout -- file 来丢弃暂存区的修改
 
 ######假如本地删除了一个test.txt文件，你可以：git checkout --  test.txt 把它恢复最新版本，和丢弃工作区修改一样，你也可以：git rm test.txt 把它从版本库删除
 
+ssh-keygen -t rsa -C "youremail@example.com" 生成密钥
+git remote add origin https://github.com/lorickz/zxy_git.git 把本地仓库关联一个远程仓库
+git push -u origin master 第一次推送本地master分支的所有内容到远程仓库
+git push origin master 推送本地修改到远程仓库
+
+
