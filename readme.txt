@@ -20,3 +20,6 @@ git add helloworld.txt
 第二步，用命令git commit告诉Git，把文件提交到仓库：（-m后面的是提交说明）
 git commit -m "添加了readme.txt和helloworld.txt两个文件"
 
+git status #查看当前仓库状态
+git diff readme.txt #查看readme.txt的修改
+######git add 和 git commit提交修改（和提交新文件一样，当时git commit之前建议先git status一下）
