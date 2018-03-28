@@ -1,3 +1,5 @@
+zhangxy,welcome to git
+
 ######安装完后，打开git.bash配置用户和邮箱
 
 git config --global user.name "zhangxy"
